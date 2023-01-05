@@ -152,7 +152,7 @@ function Calculator() {
                 
             </div>
 
-            <input className='display' type="text" readonly="readonly" name="number"  value={num ? numberformatted : resultformatted} onChange={(e) => setNum(+e.target.value)} ></input>
+            <input className='display' type="text" readOnly="readonly" name="number"  value={num ? numberformatted : resultformatted} onChange={(e) => setNum(+e.target.value)} ></input>
 
 
             <div className='keypad'>
@@ -161,7 +161,7 @@ function Calculator() {
                 <button value={7} onClick={() => setNum(prevelement => prevelement + 7)}>7</button>
                 <button value={8} onClick={() => setNum(prevelement => prevelement + 8)}>8</button>
                 <button value={9} onClick={() => setNum(prevelement => prevelement + 9)}>9</button>
-                <button className="resetdel" onClick={handleDelete}>DEL</button>
+                <button className="resetdel delfont" onClick={handleDelete}>DEL</button>
             </div>
 
             <div className='keypadrow'>

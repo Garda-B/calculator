@@ -153,8 +153,8 @@ html {
 
 .theme {
   position: absolute;
-  left: 6em;
-  bottom: 1em;
+  left: 18em;
+  top:1.6em;
   font-size: .75rem;
 
 }
@@ -274,13 +274,6 @@ button:hover {
 
 }
 
-.theme {
-
-  position: absolute;
-  left: 19em;
-  top: 1.4em;
-}
-
 .equalsigncolor {
 
   background-color: var(--toggle-button);
@@ -320,6 +313,17 @@ button:hover {
         height: 2em;
         font-size: 2em;
         border-radius: 4px;
+      }
+
+      .delfont {
+        font-size: 1.6rem;
+        height: 2.6em;
+      }
+
+      .theme {
+
+        left: 18em;
+        top:1.6em;
       }
   }
 
