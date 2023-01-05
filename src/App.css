@@ -1,0 +1,326 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+* {
+  margin: 0;
+  border: none;
+
+}
+
+
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+
+
+.theme-one {
+
+  --bckground: hsl(222, 26%, 31%);
+  --keypad-background: hsl(223, 31%, 20%);
+  --screen-background: hsl(224, 36%, 15%);
+
+  --key-background: hsl(225, 21%, 49%);
+  --key-shadow-one: hsl(224, 28%, 35%);
+
+  --toggle-button: hsl(6, 63%, 50%);
+  --key-shadow: hsl(6, 70%, 34%);
+
+  --other-key-background: hsl(30, 25%, 89%);
+  --other-key-shadow: hsl(28, 16%, 65%);
+
+  --text-one: hsl(221, 14%, 31%);
+  --text-two: hsl(0, 0%, 100%);
+
+  --upper-color: hsl(0, 0%, 100%);
+
+
+
+
+}
+
+.theme-two {
+
+  --bckground: hsl(0, 0%, 90%);
+  --keypad-background: hsl(0, 5%, 81%);
+  --screen-background: hsl(0, 0%, 93%);
+
+  --key-background: hsl(185, 42%, 37%);
+  --key-shadow: hsl(185, 58%, 25%);
+
+  --toggle-button: hsl(25, 98%, 40%);
+  --key-shadow: hsl(25, 99%, 27%);
+
+  --other-key-background: hsl(45, 7%, 89%);
+  --other-key-shadow: hsl(35, 11%, 61%);
+
+  --text-two: hsl(0, 0%, 100%);
+  --text-one: hsl(60, 10%, 19%);
+
+  --upper-color: hsl(60, 10%, 19%);
+
+
+}
+
+
+.theme-three {
+
+  --bckground: hsl(268, 75%, 9%);
+  --keypad-background: hsl(268, 71%, 12%);
+  --screen-background: hsl(0, 0%, 93%);
+
+  --key-background: hsl(281, 89%, 26%);
+  --key-shadow: hsl(285, 91%, 52%);
+
+  --toggle-button: hsl(176, 100%, 44%);
+  --key-shadow: hsl(177, 92%, 70%);
+
+  --other-key-background: hsl(281, 89%, 26%);
+  --other-key-shadow: hsl(35, 11%, 61%);
+
+  --text-one: hsl(52, 100%, 62%);
+  --text-two: hsl(0, 0%, 100%);
+
+  --upper-color: hsl(52, 100%, 62%);
+}
+
+body {
+
+  display: flex;
+  
+  color: var(--text-one);
+  height: 100%;
+  background-color: var(--bckground);
+
+
+}
+
+html {
+
+
+  height: 100%;
+}
+
+#root {
+  margin: auto;
+ 
+
+}
+
+.wrapper {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+:root {
+  font-family: League Spartan;
+  font-size: 2rem;
+
+
+}
+
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+
+}
+
+.toggle {
+
+  width: 3em;
+  height: 1em;
+  border-radius: 2em;
+  background-color: var(--keypad-background);
+  position: relative;
+  margin-top: .25em;
+
+}
+
+.theme {
+  position: absolute;
+  left: 6em;
+  bottom: 1em;
+  font-size: .75rem;
+
+}
+
+ul {
+  margin: 0 .3em;
+}
+
+.circle-one {
+
+  position: absolute;
+  border-radius: 50%;
+  width: 20%;
+  height: 60%;
+  top: 20%;
+  left: 8%;
+  background-color: var(--toggle-button);
+}
+
+.circle-two {
+
+  position: absolute;
+  border-radius: 50%;
+  width: 20%;
+  height: 60%;
+  top: 20%;
+  left: 38%;
+  background-color: var(--toggle-button);
+}
+
+.circle-three {
+
+  position: absolute;
+  border-radius: 50%;
+  width: 20%;
+  height: 60%;
+  top: 20%;
+  left: 75%;
+  background-color: var(--toggle-button);
+}
+
+.keypadrow {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: .75em;
+
+
+}
+
+.keypadrow:last-of-type {
+
+  margin-bottom: 0;
+}
+
+.firstrow {
+  margin-bottom: 1em;
+  color: var(--upper-color);
+  position: relative;
+
+}
+
+.display {
+
+  height: 3em;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--keypad-background);
+  color: var(--upper-color);
+  margin-bottom: 0.75em;
+  text-align: right;
+  font-size: 1.5rem;
+  padding: 0 1em;
+
+}
+
+
+.keypad {
+
+  background-color: var(--keypad-background);
+  padding: 1em 1.25em;
+  border-radius: 10px;
+
+}
+
+button {
+  background-color: var(--other-key-background);
+  color: var(--text-one);
+  border-radius: 10px;
+  width: 20%;
+  height: 2em;
+  box-shadow: 0 0.1em 1px var(--other-key-shadow);
+
+}
+
+button:hover {
+
+  cursor: pointer;
+  backdrop-filter: 20px;
+}
+
+
+.bottomrow {
+
+  width: 47%;
+}
+
+.resetdel {
+  background-color: var(--key-background);
+  box-shadow: 0 0.1em 2px var(--key-shadow-one);
+  color: var(--text-two);
+}
+
+
+.smallerfont {
+  font-size: .75rem;
+
+}
+
+.theme {
+
+  position: absolute;
+  left: 19em;
+  top: 1.4em;
+}
+
+.equalsigncolor {
+
+  background-color: var(--toggle-button);
+  box-shadow: 0 .1em 1px var(--key-shadow);
+
+
+}
+
+
+@media only screen and (max-width: 900px) {
+
+
+  :root {
+    font-family: League Spartan;
+    font-size: 1.5em;
+
+
+  }
+
+  @media only screen and (max-width: 507px) {
+
+      body {
+        height: auto;
+      }
+
+      .wrapper {
+        padding: 1em;
+
+      }
+
+      :root {
+        font-size: 1em;
+      }
+
+      button {
+
+        height: 2em;
+        font-size: 2em;
+        border-radius: 4px;
+      }
+  }
+
+}
